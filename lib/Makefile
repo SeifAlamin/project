@@ -28,5 +28,5 @@ clean:
 	@rm -f $(LIBNAME) 
 	
 cleanall: clean
-	@echo "Cleanning all lib files"
+	@echo "Cleaning all lib files"
 	@rm -f $(mylib)
