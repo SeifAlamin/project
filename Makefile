@@ -1,7 +1,10 @@
 project: app.o
-	gcc app.o -Llib -lmylib -o project
+	@echo "linking application with the lib"
+	@gcc app.o -Llib -lmylib -o project
 
 app.o: app.c
-	gcc -c app.c -o app.o -Iheader
+	@echo "getting the object file from .c"
+	@gcc -c app.c -o app.o -Iheader
 clean:
-	rm app.o project
+	@echo "Removing project and Object file"
+	@rm app.o project
